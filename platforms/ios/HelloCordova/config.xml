@@ -49,4 +49,11 @@
     <preference name="PageLength" value="0" />
     <preference name="PaginationBreakingMode" value="page" />
     <preference name="PaginationMode" value="unpaginated" />
+    <feature name="Camera">
+        <param name="ios-package" value="CDVCamera" />
+    </feature>
+    <preference name="CameraUsesGeolocation" value="false" />
+    <feature name="ContactsPhoneNumbers">
+        <param name="ios-package" value="CDVContactsPhoneNumbers" />
+    </feature>
 </widget>
