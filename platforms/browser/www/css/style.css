@@ -1,7 +1,7 @@
 body{
     padding: 0;
     margin: 0;
-    background-color: rgba(0,0,0,0.1);
+    background-color: #e5b5b5 !important;
 }
 
 /* ------------ container ------------ */
@@ -13,9 +13,9 @@ body{
 
 /* ------------ header ------------ */
 .header{
-    height:200px;
-    background-image: url('../images/bg2.jpg');
-    background-size: 100% 200%;
+    height:230px;
+    background-image: url('../images/header-bg1.png');
+    background-size: cover;
     background-repeat: no-repeat;
     position: relative;
 }
@@ -41,13 +41,13 @@ body{
     left: 10px;
     color: #FFF;
     font-size: 25px;
-    font-family: 'Titillium Web', sans-serif;
+    font-family: 'Montserrat-Regular', sans-serif;
 }
 
 /* ------------ content ------------ */
 .content{
     max-height:350px;
-    background-color: #FFF;
+    background-color: #e5b5b5;
     overflow: auto;
 }
 .content::-webkit-scrollbar { 
@@ -86,12 +86,12 @@ body{
     font-size: 20px;
     left:50px;
     top:5px;
-    background-color: #FFF;
+    /*background-color: #FFF;*/
     max-width:285px;
 }
 .lineThrough{
     text-decoration: line-through;
-    color : #ccc;
+    color : rgb(255, 255, 255);
 }
 .item i.de{
     position: absolute;
@@ -107,14 +107,14 @@ body{
 .add-to-do{
     position: relative;
     height:60px;
-    background-color: #FFF;
+    background-color: #e5b5b5;
     padding: 10px;
     border-top: 1px solid rgba(0,0,0,0.1);
 }
 .add-to-do i{
     position: absolute;
     font-size: 40px;
-    color: #4162f6;
+    color: #3d43ed;
 }
 
 .add-to-do input{
@@ -127,23 +127,23 @@ body{
     padding-left:10px;
 }
 .add-to-do input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-    color: #4162f6;
-    font-family: 'Titillium Web', sans-serif;
+    color: #3d43ed;
+    font-family: 'Montserrat-Regular', sans-serif;
     font-size: 20px;
 }
 .add-to-do input::-moz-placeholder { /* Firefox 19+ */
-    color: #4162f6;
-    font-family: 'Titillium Web', sans-serif;
+    color: #3d43ed;
+    font-family: 'Montserrat-Regular', sans-serif;
     font-size: 20px;
 }
 .add-to-do input:-ms-input-placeholder { /* IE 10+ */
-    color: #4162f6;
-    font-family: 'Titillium Web', sans-serif;
+    color: #3d43ed;
+    font-family: 'Montserrat-Regular', sans-serif;
     font-size: 20px;
 }
 .add-to-do input:-moz-placeholder { /* Firefox 18- */
-    color: #4162f6;
-    font-family: 'Titillium Web', sans-serif;
+    color: #3d43ed;
+    font-family: 'Montserrat-Regular', sans-serif;
     font-size: 20px;
 }
 
