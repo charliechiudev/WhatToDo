@@ -223,9 +223,9 @@ iframe {
 
 /*---------------------------------------------*/
 .login100-form-avatar {
-  width: 120px;
+  width: 130px;
   height: 120px;
-  border-radius: 50%;
+  /*border-radius: 50%;*/
   overflow: hidden;
   margin: 0 auto;
 }
@@ -521,7 +521,6 @@ iframe {
 
 @media (max-width: 576px) {
   .wrap-login100 {
-    padding-top: 80px;
     padding-left: 15px;
     padding-right: 15px;
   }
