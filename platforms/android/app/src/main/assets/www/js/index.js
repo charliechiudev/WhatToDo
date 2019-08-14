@@ -16,10 +16,17 @@
  * specific language governing permissions and limitations
  * under the License.
  */
+
 var app = {
     // Application Constructor
     initialize: function() {
         document.addEventListener('deviceready', this.onDeviceReady.bind(this), false);
+        document.getElementById("loginBtn").addEventListener("click", this.login);
+        
+    },
+
+    login:function(){
+        alert("logged in");
     },
 
     // deviceready Event Handler

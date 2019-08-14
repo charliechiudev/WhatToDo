@@ -1,3 +1,3 @@
 # WhatToDo
 
-testing
+To-do list mobile application

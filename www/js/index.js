@@ -21,8 +21,6 @@ var app = {
     // Application Constructor
     initialize: function() {
         document.addEventListener('deviceready', this.onDeviceReady.bind(this), false);
-        document.getElementById("loginBtn").addEventListener("click", this.login);
-        
     },
 
     login:function(){
