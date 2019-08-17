@@ -1,3 +1,15 @@
+// function validate(){
+//     var username = document.getElementById("username").value;
+//     var password = document.getElementById("password").value;
+
+//     if (username.value == "charlie" || password.value == "charlie"){
+//         return true;
+//     }else{
+//         return false;
+//     }
+
+// }
+
 (function ($) {
     "use strict";
 
