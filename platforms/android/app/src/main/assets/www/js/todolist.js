@@ -123,27 +123,3 @@ list.addEventListener("click", function (event) {
     // add item to localstorage ( this code must be added where the LIST array is updated)
     localStorage.setItem("TODO", JSON.stringify(LIST));
 });
-
-// camera plugin
-document.addEventListener('deviceready', onDeveice, false);
-
-function onDeveice() {
-
-    document.getElementById('btn-camera').addEventListener('click, takePicture');
-
-    function takePicture() {
-        navigator.camera.getPicture(success, error, {
-            quality: 30,
-            destinationType: Camera.DestinationType.DATA_URL
-        });
-    }
-
-    function success(imageData) {
-        var img = document.getElementById('photo');
-        img.src = "data:image/jpeg;base64," + imageData
-    }
-
-    function error(e) {
-        console.log("error: " + e);
-    }
-}
