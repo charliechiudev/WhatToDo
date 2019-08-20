@@ -13,7 +13,7 @@ body{
 
 /* ------------ header ------------ */
 .header{
-    height:250px;
+    height:220px;
     background-image: url('../images/header-bg1.png');
     background-size: cover;
     background-repeat: no-repeat;
@@ -27,7 +27,7 @@ body{
     top: 25px;
 }
 .clear i{
-    font-size: 25px;
+    font-size: 30px;
     color: #FFF;
 }
 .clear i:hover{
@@ -35,18 +35,18 @@ body{
     transform: rotate(45deg);
 }
 
-.share{
+.camera{
     width : 30px;
     height: 30px;
     position: absolute;
-    right:10px;
-    top: 55px;
+    right:11px;
+    top: 63px;
 }
-.share i{
-    font-size: 25px;
+.camera i{
+    font-size: 23px;
     color: #FFF;
 }
-.share i:hover{
+.camera i:hover{
     cursor: pointer;
     transform: rotate(45deg);
 }

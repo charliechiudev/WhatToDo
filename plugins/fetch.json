@@ -15,12 +15,22 @@
     "is_top_level": true,
     "variables": {}
   },
-  "cordova-plugin-contacts-phonenumbers": {
+  "es6-promise-plugin": {
     "source": {
       "type": "registry",
-      "id": "cordova-plugin-contacts-phonenumbers"
+      "id": "es6-promise-plugin@^4.1.0"
+    },
+    "is_top_level": false,
+    "variables": {}
+  },
+  "cordova-plugin-x-socialsharing": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-x-socialsharing"
     },
     "is_top_level": true,
-    "variables": {}
+    "variables": {
+      "ANDROID_SUPPORT_V4_VERSION": "24.1.1+"
+    }
   }
 }

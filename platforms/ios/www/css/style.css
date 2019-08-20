@@ -13,7 +13,7 @@ body{
 
 /* ------------ header ------------ */
 .header{
-    height:230px;
+    height:220px;
     background-image: url('../images/header-bg1.png');
     background-size: cover;
     background-repeat: no-repeat;
@@ -23,8 +23,8 @@ body{
     width : 30px;
     height: 30px;
     position: absolute;
-    right:20px;
-    top: 20px;
+    right:10px;
+    top: 25px;
 }
 .clear i{
     font-size: 30px;
@@ -32,16 +32,43 @@ body{
 }
 .clear i:hover{
     cursor: pointer;
-    text-shadow: 1px 3px 5px #000;
     transform: rotate(45deg);
 }
+
+.camera{
+    width : 30px;
+    height: 30px;
+    position: absolute;
+    right:11px;
+    top: 63px;
+}
+.camera i{
+    font-size: 23px;
+    color: #FFF;
+}
+.camera i:hover{
+    cursor: pointer;
+    transform: rotate(45deg);
+}
+
 #date{
     position: absolute;
-    bottom: 10px;
-    left: 10px;
-    color: #FFF;
-    font-size: 25px;
+    bottom: 15px;
+    left: 15px;
+    color: rgb(136, 136, 136);
+    font-size: 15px;
     font-family: 'Montserrat-Regular', sans-serif;
+    font-weight: bold;
+}
+
+.welcome{
+    position: absolute;
+    bottom: 40px;
+    left: 15px;
+    color: #FFF;
+    font-size: 32px;
+    font-family: 'Montserrat-Regular', sans-serif;
+    font-weight: bold;
 }
 
 /* ------------ content ------------ */
@@ -108,7 +135,9 @@ body{
     position: relative;
     height:60px;
     background-color: #e5b5b5;
-    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
     border-top: 1px solid rgba(0,0,0,0.1);
 }
 .add-to-do i{
@@ -119,7 +148,7 @@ body{
 
 .add-to-do input{
     position: absolute;
-    left: 50px;
+    left: 60px;
     height: 35px;
     background-color: transparent;
     border: none;

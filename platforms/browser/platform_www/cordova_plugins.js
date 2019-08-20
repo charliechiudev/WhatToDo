@@ -31,11 +31,17 @@ module.exports = [
         "runs": true
     },
     {
-        "file": "plugins/cordova-plugin-contacts-phonenumbers/www/contactsPhoneNumbers.js",
-        "id": "cordova-plugin-contacts-phonenumbers.contactsPhoneNumbers",
-        "pluginId": "cordova-plugin-contacts-phonenumbers",
+        "file": "plugins/es6-promise-plugin/www/promise.js",
+        "id": "es6-promise-plugin.Promise",
+        "pluginId": "es6-promise-plugin",
+        "runs": true
+    },
+    {
+        "file": "plugins/cordova-plugin-x-socialsharing/www/SocialSharing.js",
+        "id": "cordova-plugin-x-socialsharing.SocialSharing",
+        "pluginId": "cordova-plugin-x-socialsharing",
         "clobbers": [
-            "navigator.contactsPhoneNumbers"
+            "window.plugins.socialsharing"
         ]
     }
 ];
@@ -43,8 +49,9 @@ module.exports.metadata =
 // TOP OF METADATA
 {
     "cordova-plugin-camera": "4.1.0",
-    "cordova-plugin-contacts-phonenumbers": "0.0.12",
-    "cordova-plugin-whitelist": "1.3.4"
+    "cordova-plugin-whitelist": "1.3.4",
+    "es6-promise-plugin": "4.2.2",
+    "cordova-plugin-x-socialsharing": "5.4.7"
 }
 // BOTTOM OF METADATA
 });

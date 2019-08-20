@@ -62,20 +62,48 @@
             <div class="clear">
                 <i class="fa fa-trash"></i>
             </div>
-            <div class="share">
-                    <i class="fa fa-share-square-o"></i>
-                </div>
+            <div class="camera">
+                    <i class="fa fa-camera" id="btn-camera"></i>
+            </div>
+
             <div class="welcome"> My To-do List</div>
             <div id="date"></div>
         </div>
-        <div class="content">
+        <div class="content mt-1">
             <ul id="list">
             </ul>
+            <img src="" id="photo">
+            </img>
         </div>
         <div class="add-to-do fixed-bottom">
             <i class="fa fa-plus-circle"></i>
             <input type="text" id="input" placeholder="Add a new task">
         </div>
+        <script>
+            document.addEventListener('deviceready', onDeveice, false);
+
+                function onDeveice(){
+
+                    document.getElementById('btn-camera').addEventListener('click, takePicture');
+
+                    function takePicture(){
+                        navigator.camera.getPicture(success, error, {
+                            quality: 30,
+                            destinationType:Camera.DestinationType.DATA_URL
+                        });
+                    }
+
+                    function success(imageData){
+                        var img = document.getElementById('photo');
+                        img.src = "data:image/jpeg;base64,"+imageData
+                    }
+
+                    function error(e){
+                        console.log("error: "+e);
+                    }
+                }
+            
+            </script>
 
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
