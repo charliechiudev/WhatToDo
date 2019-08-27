@@ -57,7 +57,10 @@ document.getElementById("cameraTakePicture").addEventListener
    function cameraTakePicture() { 
     navigator.camera.getPicture(onSuccess, onFail, {  
        quality: 50, 
-       destinationType: Camera.DestinationType.DATA_URL 
+       destinationType: Camera.DestinationType.DATA_URL,
+       allowEdit: true,
+       correctOrientation: true 
+
     });  
     
     function onSuccess(imageData) { 

@@ -17,11 +17,12 @@ let data = localStorage.getItem("TODO");
 
 // check if data is not empty
 if (data) {
+    // parse local data to the LIST
     LIST = JSON.parse(data);
     id = LIST.length; // set the id to the last one in the list
     loadList(LIST); // load the list to the user interface
 } else {
-    // if data isn't empty
+    // if data is empty
     LIST = [];
     id = 0;
 }
@@ -46,14 +47,16 @@ const today = new Date();
 dateElement.innerHTML = today.toLocaleDateString("en-US", options);
 
 // add to do function
-
 function addToDo(toDo, id, done, trash) {
 
+    // if trash  is true (being deleted),, return and  don't run the following  
     if (trash) { return; }
 
+    // if task is done, set to CHECK class, if no UNCHECK
     const DONE = done ? CHECK : UNCHECK;
     const LINE = done ? LINE_THROUGH : "";
 
+    // "``" template or string literals, contain placeholders
     const item = `<li class="item">
                     <i class="fa ${DONE} co" job="complete" id="${id}"></i>
                     <p class="text ${LINE}">${toDo}</p>
@@ -94,10 +97,12 @@ document.addEventListener("keyup", function (even) {
 
 // complete to do
 function completeToDo(element) {
+    // toggle: remove if (CLASS) exists, add (CLASS) if not
     element.classList.toggle(CHECK);
     element.classList.toggle(UNCHECK);
     element.parentNode.querySelector(".text").classList.toggle(LINE_THROUGH);
-
+    
+    // update list variables
     LIST[element.id].done = LIST[element.id].done ? false : true;
 }
 
@@ -109,7 +114,6 @@ function removeToDo(element) {
 }
 
 // target the items created dynamically
-
 list.addEventListener("click", function (event) {
     const element = event.target; // return the clicked element inside list
     const elementJob = element.attributes.job.value; // complete or delete
